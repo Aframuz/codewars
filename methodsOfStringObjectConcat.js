@@ -1,7 +1,9 @@
 function splitAndMerge(string, separator) {
    words = string.split(" ")
+   let arr = []
    for (let i = 0; i < words.length; i++) {
-      words[i].split("").join(".")
+      console.log(words[i])
+      arr.push(words[i].split("").join(separator))
    }
-   console.log(words)
+   return arr.join(" ")
 }

@@ -1,23 +1,21 @@
-var str = '';
-str = str
-if(moneyIn === '£5' || moneyIn === '£2'|| moneyIn === '£1'){
-var newMon = parseInt(moneyIn[1]) * 100;
-}
-else if( moneyIn === '20p'|| moneyIn === '50p'){
-newMon = parseInt(moneyIn);
-console.log(newMon);
-}
-else {
-return moneyIn;
-}
-var twenty = Math.floor(newMon/20);
-var ten = (newMon - twenty20)/10;
-
-for(var i = 0; i < twenty; i++){
-str += '20p ';
-}
-for(var j = 0; j < ten; j++){
-str += '10p ';
-}
-return str;
+function changeMe(moneyIn) {
+   if (
+      moneyIn !== "£5" &&
+      moneyIn !== "£2" &&
+      moneyIn !== "£1" &&
+      moneyIn !== "50p" &&
+      moneyIn !== "20p"
+   ) {
+      return moneyIn
+   } else if (moneyIn === "£5") {
+      return "20p ".repeat(25).trim()
+   } else if (moneyIn === "£2") {
+      return "20p ".repeat(10).trim()
+   } else if (moneyIn === "£1") {
+      return "20p ".repeat(5).trim()
+   } else if (moneyIn === "50p") {
+      return "20p 20p 10p"
+   } else if (moneyIn === "20p") {
+      return "10p 10p"
+   }
 }
