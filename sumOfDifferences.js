@@ -1,0 +1,19 @@
+function sumOfDifferences(arr) {
+   let sorted = arr.sort((a, b) => b - a)
+   total = 0
+   for (let i = 1; i < sorted.length; i++) {
+      total += sorted[i - 1] - sorted[i]
+   }
+   return total
+}
+
+//ANSWERS
+function sumOfDifferences(arr) {
+   return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0
+}
+
+const sumOfDifferences = (arr) =>
+   arr
+      .sort((a, b) => b - a)
+      .map((a, i) => a - arr[i + 1] || 0)
+      .reduce((a, b) => a + b, 0)
