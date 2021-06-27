@@ -1,4 +1,6 @@
+//ANSWERS
+
 function tArea(tStr) {
-   let arr = tStr.split(".")
-   arr.filter((s) => s === " ")
+   const side = tStr.split("\n").length - 3
+   return (side * side) / 2
 }
