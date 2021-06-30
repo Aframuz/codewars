@@ -1,3 +1,5 @@
+// ANSWERS
+
 function getName(args) {
    if (args.length == 0) {
       return arguments.callee.caller.name + "."
