@@ -5,7 +5,7 @@ String.prototype.toJadenCase = function () {
 }
 
 //ANSWERS
-String.prototype.toJadenCase = function () {
+String.prototype.toJadenCase = function () { 
    return this.replace(/(^|\s)[a-z]/g, function (x) {
       return x.toUpperCase()
    })
