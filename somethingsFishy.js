@@ -4,7 +4,7 @@ function isTotal3() {
    for (var index = 0; index < 1; index++) var variableInLoop = 1
 
    ;(function defineAVariable() {
-      var variableInFunction = 1
+      variableInFunction = 1
    })()
 
    var result = simpleVariable + variableInLoop + variableInFunction
