@@ -9,5 +9,5 @@ var hotpo = function (n) {
       }
       total++
    }
-   return total
+   return total + 1
 }
