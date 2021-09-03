@@ -1,6 +1,3 @@
 function myParseInt(str) {
-  let arr = str.split(" ")
-  if(arr.length > 1) return NaN
-  if(Number.isInteger(str)) return +str
-  return NaN
+   let cleanStr = str.replace(/[\s\f\n\r\t\v]/g, "")
 }
